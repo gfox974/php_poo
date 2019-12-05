@@ -30,8 +30,31 @@ abstract class Produit {
     protected $nom;
     protected $prix;
     protected $devise;
+
+    abstract function convertPrix();
 }
 
+class Panier implements Produit {
+    private $panier = [];
+    private $selectedDevise;
 
+    public function __construct($devise)
+    {
+        $this->selectedDevise = $devise;
+    }
+
+    public function changeDevise($devise){
+        $this->selectedDevise = $devise;
+    }
+// todo
+    public function convertPrix(){
+
+    }
+
+    public function ajoutProduit(Produit $produit){
+        $this->panier[] = $produit;
+        // todo : do the math avec les props selected / prix / devise
+    }
+}
 
 ?>
