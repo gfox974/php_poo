@@ -75,9 +75,9 @@ class Produit {
 
 }
 
-$panier = New Panier();
+$panier = New Panier('EUR');
 $panier->ajouter(new Produit("Ducky Channel One", 1, 99.99, "EUR"));
 $panier->ajouter(new Produit("Echo", 2, 69.99, "USD"));
 
 echo $panier->calculerTotalEn("EUR");
-___________________________________________________________________
+?>

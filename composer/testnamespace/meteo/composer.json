@@ -1,0 +1,13 @@
+{
+    "name": "etudiant/meteo",
+    "authors": [
+        {
+            "name": "gfox974",
+            "email": "nosmas.ju@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"wf3\\":"src/class/"}
+    }
+}

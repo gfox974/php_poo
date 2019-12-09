@@ -72,8 +72,6 @@ $banque->ajouterCompte($compte_a_bis);
 
 echo "Nombre de client(s) = " . $banque->nbClients() . "<br>";
 echo "Nombre de compte(s) = " . $banque->nbComptes() . "<br>";
-_____________________________
-<?php
 
 class Client {
     private $nom;
@@ -170,8 +168,6 @@ echo "Nombre de compte(s) = " . $banque->nbComptes() . "<br>";
 
 $infos = $compte_durand->infos();
 echo "Compte = nom : " . $infos['nom'] . ", solde : " . $infos['solde'] . " €<br>";
-______________________
-<?php
 
 class Client {
     private $nom;
@@ -310,3 +306,5 @@ var_dump($durand);
 var_dump($durant);
 
 print_r($banque->listerLesComptes($a));
+
+?>

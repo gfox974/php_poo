@@ -1,0 +1,12 @@
+{
+    "name": "etudiant/testnamespace",
+    "authors": [
+        {
+            "name": "gfox974",
+            "email": "nosmas.ju@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.0"
+    }
+}

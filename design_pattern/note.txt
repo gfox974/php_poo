@@ -1,0 +1,19 @@
+exo design pattern, apres le singleton :
+    le pattern "observer"
+
+Exercice :
+
+Concevoir un systeme de meteo
+( une station meteo qui prends des mesures : hydrometrie, temperature, pression ...)
+Une source d'information donc, à laquelle des services peuvent s'abonner
+
+lorsqu'un service refresh une mesure, les devices qui ont souscrits au service voient leurs données refresh aussi (des applis telephone / web par exemple).
+    - client portable : info sms
+    - client web : infos html
+    - client radio reveil : format specifique
+
+    cf definition:
+    Le patron observateur est un patron de conception de la famille des patrons comportementaux. Il s'agit de l'un des vingt-trois patrons de l'ouvrage du « Gang of Four » Design Patterns – Elements of Reusable Object-Oriented Software1.
+
+Il est utilisé pour envoyer un signal à des modules qui jouent le rôle d'observateurs. En cas de notification, les observateurs effectuent alors l'action adéquate en fonction des informations qui parviennent depuis les modules qu'ils observent (les observables). 
+Voir php observer / SplSubject

@@ -1,0 +1,32 @@
+composer est un gestionnaire de packages pour php (comme npm, gem, pip ..)
+
+composer peut gerer l'autoloading sur les namespace : 
+( normes psr0 / psr4 : voir php fig )
+
+on va utiliser un front controller qui va rediriger vers les bons compos
+
+( on peut voir composer init comme un simili ng generate component )
+
+mise en place de l'autoload : composer install au niveau du composer.json
+
+on va indiquer a au front controller qu'il faut balancer l'autoload situé dans vendor, qui lui se chargera de load le contenu dudit vendor ( nos classes donc ).
+
+-----
+
+pour l'exemple, on va installer et appeller une librairie servant a créer des logs : monolog
+
+( il y a search etc, mais pour installer c'est "require" -> par defaut tout se cale dans vendor.)
+
+on peut voir qu'il faudrait importer masse de classes du package ..
+
+
+autoloader : voir meteo/composer json ->
+
+    "autoload": {
+        "psr-4": {"wf3\\":"src/"} --> namespace, src
+    }
+
+    on cale ensuite des header namespace wf3\Meteo; dans les fichiers concernés dans cet environnement logique
+    ( il faut faire un composer update pour actualiser les liaisons)
+
+    Quand on utilise uniquement du php, il est recommandé de ne pas cloturer la balise php
