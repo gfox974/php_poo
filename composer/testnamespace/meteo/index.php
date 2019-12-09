@@ -26,3 +26,7 @@ $i['nom']; // == dudule
 
 // print_r();
 // die("stopping"); -> interrompt le script
+/* boucles classiques for / foreach / while / do while
+
+fonctions internes de base :
+empty, isset, unset, etc ..
