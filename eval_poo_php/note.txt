@@ -1,0 +1,4 @@
+Je suis loin d'avoir fini ce que j'ai commencé ( la plupart des fonctions click ne declenchent encore qu'un console log, et je n'ai pas eu le temps de refacto) ><
+version online ici : http://testmaquette.epizy.com/
+
+la version fichier est clé en main, il y a la db et la configuation locale est faite.
